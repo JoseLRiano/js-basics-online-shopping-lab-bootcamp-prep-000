@@ -22,7 +22,7 @@ function viewCart() {
   if(!cart.length){
     return console.log("Your shopping cart is empty.");
   }
-  const arrNameAndPrice =[];//store the objects in cart to later print them
+  var arrNameAndPrice =[];//store the objects in cart to later print them
   for(let i =0; i <cart.length;i++){//divide the information
     var iName = Object.keys(cart[i]);
     var productName = iName[0];
