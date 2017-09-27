@@ -30,7 +30,7 @@ function viewCart() {
     arrNameAndPrice.push(`${iName} at ${iPrice}`);
   }
   if(arrNameAndPrice.lenght === 1){
-    return console.log(`In your cart, you have ${arrNameAndPrice[0]}.`);
+    return console.log(`In your cart, you have ${arrNameAndPrice.join()}.`);
   } else if (arrNameAndPrice.length === 2) {
     return console.log(`In your cart, you have ${arrNameAndPrice[0]} and ${arrNameAndPrice.slice(-1)}.`);
   } else {
