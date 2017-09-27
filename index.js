@@ -26,7 +26,7 @@ function viewCart() {
   for(let i =0; i <cart.length;i++){//divide the information
     var iName = objects.keys(cart[i]);
     var productName = iName[0];
-    var iPrice = cart[i][itemName];
+    var iPrice = cart[i][iName];
     arrNameAndPrice.push(`${iName} at ${iPrice}`);
   }
   if(arrNameAndPrice.lenght === 1){
