@@ -44,10 +44,10 @@ function total() {
   for(let i = 0; i < cart.length; i++){
     var iName = Object.keys(cart[i]);
     var productName = iName[0];
-    total += parseInt(cart[i][productName], 10);// convert to an integer using a 2d array 
+    total += parseInt(cart[i][productName], 10);// convert to an integer using a 2d array
   }
   return total;
-  
+
 }
 
 function removeFromCart(item) {
