@@ -47,11 +47,15 @@ function total() {
     total += parseInt(cart[i][productName], 10);// convert to an integer using a 2d array
   }
   return total;
-
 }
 
 function removeFromCart(item) {
   // write your code here
+  for(let i =0; i<cart.length; i++){
+    if(cart[i].hasOwnProperty(item)){
+      return cart.splice(i,1); //This will remove at index i element
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
