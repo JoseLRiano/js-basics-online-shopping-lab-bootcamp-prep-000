@@ -27,7 +27,7 @@ function viewCart() {
     var iName = objects.keys(cart[i]);
     var productName = iName[0];
     var iPrice = cart[i][iName];
-    arrNameAndPrice.push(`${iName} at ${iPrice}`);
+    arrNameAndPrice.push(`${iName} at $${iPrice}`);
   }
   if(arrNameAndPrice.lenght === 1){
     return console.log(`In your cart, you have ${arrNameAndPrice.join()}.`);
