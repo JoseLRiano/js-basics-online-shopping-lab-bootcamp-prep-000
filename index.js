@@ -23,7 +23,7 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   var arrNameAndPrice =[];//store the objects in cart to later print them
-  for(let i =0; i <cart.length;i++){//divide the information 
+  for(let i =0; i <cart.length;i++){//divide the information
     var iName = objects.keys(cart[i]);
     var productName = iName[0];
     var iPrice = cart[i][itemName];
@@ -31,7 +31,7 @@ function viewCart() {
   }
   if(arrNameAndPrice.lenght<1){
     return consle.log(`In your cart, you have ${arrNameAndPrice.join()}.`);
-    
+
   }
 }
 
