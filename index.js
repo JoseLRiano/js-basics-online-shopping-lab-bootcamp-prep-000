@@ -29,7 +29,7 @@ function viewCart() {
     var iPrice = cart[i][itemName];
     arrNameAndPrice.push(`${iName} at ${iPrice}`);
   }
-  if(arrNameAndPrice.lenght<1){
+  if(arrNameAndPrice.lenght<=1){
     return consle.log(`In your cart, you have ${arrNameAndPrice.join()}.`);
 
   }
